@@ -1,14 +1,19 @@
 package cookies;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MasterOrder {
-    public static void main(String[] args){
-
-    }
-
-    public void addOrder(CookieOrder cookieOrderTest) {
+    List<CookieOrder> orders = new ArrayList<>();
+    public void addOrder(CookieOrder cookieOrder) {
+        orders.add(cookieOrder);
     }
 
     public int getTotalBoxes() {
-        return 1;
+        int boxes = 0;
+        for(CookieOrder order: orders){
+            boxes += order.getNumBoxes();
+        }
+        return boxes;
     }
 }

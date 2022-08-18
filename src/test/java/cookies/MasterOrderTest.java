@@ -14,4 +14,18 @@ public class MasterOrderTest {
 
          assertEquals(1,check);
      }
+
+    @Test
+    public void shouldReturnTotalBoxesOfTwo(){
+        MasterOrder underTest = new MasterOrder();
+        CookieOrder cookieOrderTest = new CookieOrder("",1);
+        CookieOrder cookieOrderTest2 = new CookieOrder("",1);
+        underTest.addOrder(cookieOrderTest);
+        underTest.addOrder(cookieOrderTest2);
+        int check = underTest.getTotalBoxes();
+
+        assertEquals(2,check);
+    }
+
+
 }

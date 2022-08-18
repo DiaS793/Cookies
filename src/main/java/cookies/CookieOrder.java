@@ -1,10 +1,14 @@
 package cookies;
 
 public class CookieOrder {
-    public CookieOrder(String s, int i) {
+    private int numBoxes;
+
+    public CookieOrder(String variety, int localNumBoxes) {
+        this.numBoxes =localNumBoxes;
     }
 
-    public static void main(String[] args){
 
+    public int getNumBoxes() {
+        return this.numBoxes;
     }
 }
