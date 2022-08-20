@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="cookies.MasterOrderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-18T05:41:24" hostname="DIADESKTOP" time="0.015">
+<testsuite name="cookies.MasterOrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-20T10:56:51" hostname="DIADESKTOP" time="0.015">
   <properties/>
-  <testcase name="shouldReturnTotalBoxesOfOne()" classname="cookies.MasterOrderTest" time="0.014"/>
-  <testcase name="shouldReturnTotalBoxesOfTwo()" classname="cookies.MasterOrderTest" time="0.001"/>
+  <testcase name="shouldReturnTotalBoxesAsOneAfterRemoval()" classname="cookies.MasterOrderTest" time="0.015"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

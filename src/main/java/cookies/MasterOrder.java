@@ -16,4 +16,12 @@ public class MasterOrder {
         }
         return boxes;
     }
+
+    public void removeVariety(String variety) {
+        for(CookieOrder order: orders){
+            if(order.getVariety().equals(variety)){
+                orders.remove(order);
+            }
+        }
+    }
 }
